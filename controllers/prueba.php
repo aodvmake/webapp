@@ -15,7 +15,7 @@ include("../models/bd.php");
        $rcnx = $clonn->callme();
        $passEncrip=password_hash($pass, PASSWORD_DEFAULT);
      //Inserta en las tablas necesaria 
-
+/*
      //validacion de correo 
           $cons=mysqli_query($rcnx,"SELECT* FROM `usuario` WHERE email='$correo' ");
           $row=mysqli_fetch_array($cons);
@@ -37,5 +37,5 @@ include("../models/bd.php");
               }
          else{
           echo "este correo ya existe";
-         }
+         }*/
 ?>

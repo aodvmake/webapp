@@ -19,9 +19,6 @@ $(document).ready(function(){
 					$("#email").val("")
 					$("#pass").val("")
 						switch(response){
-						case 'Guia':
-						window.location.href="views/guia.php"
-						break;
 						case 'Cliente':
 						window.location.href="views/cliente.php"
 						break;

@@ -1,5 +1,5 @@
 <?php 
-include("../controllers/sessioncliente.php");
+include("../controllers/sesionadm.php");
 ?>
 <html>
 <head>
@@ -25,7 +25,7 @@ include("../controllers/sessioncliente.php");
 <!--Navbar -->
 <!--Menu de cliente -->
 <?php
-include ("menucliente.php");
+include ("menuadmk.php");
 ?>
 
   <script type="text/javascript" src="../lib/js/jquery.min.js"></script>
@@ -38,5 +38,3 @@ include ("menucliente.php");
   <script type="text/javascript" src="js/registro.js"></script>
 </body>
 </html>
-
-

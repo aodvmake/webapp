@@ -7,7 +7,7 @@ include("../controllers/Subirproducto.php");
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>Bienvenido</title>
+  <title>Agregar Producto</title>
     <!-- MDB icon -->
   <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon">
   <!-- Font Awesome -->
@@ -51,17 +51,6 @@ include ("menuadmk.php");
                 </div>      
               </div>
             </div>
-
-
-             <div class="input-group">
-               <div class="input-group-prepend">
-                 <span class="input-group-text" id="inputGroupFileAddon01">Subir</span>
-               </div>
-               <div class="custom-file">
-                 <input type="file" class="custom-file-input" id="qrl" name="qrl" aria-describedby="inputGroupFileAddon01">
-                 <label class="custom-file-label" for="inputGroupFile01">Subir Imagen QRL</label>
-               </div>
-             </div>
 
             <div class="row">
               <div class="col">

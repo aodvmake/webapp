@@ -7,7 +7,7 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent-333">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="#">Home
+        <a class="nav-link" href="adminki.php">Home
           <span class="sr-only">(current)</span>
         </a>
       </li>
@@ -24,7 +24,7 @@
         <div class="dropdown-menu dropdown-default" aria-labelledby="navbarDropdownMenuLink-333">
           <a class="dropdown-item" href="agregarproducto.php">Agregar</a>
           <a class="dropdown-item" href="#">Actualizar</a>
-          <a class="dropdown-item" href="#">Eliminar</a>
+          <a class="dropdown-item" href="eliminarproducto.php">Eliminar</a>
         </div>
       </li>
     </ul>

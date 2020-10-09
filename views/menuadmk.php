@@ -23,7 +23,7 @@
         </a>
         <div class="dropdown-menu dropdown-default" aria-labelledby="navbarDropdownMenuLink-333">
           <a class="dropdown-item" href="agregarproducto.php">Agregar</a>
-          <a class="dropdown-item" href="#">Actualizar</a>
+          <a class="dropdown-item" href="actualizarpro.php">Actualizar</a>
           <a class="dropdown-item" href="eliminarproducto.php">Eliminar</a>
         </div>
       </li>

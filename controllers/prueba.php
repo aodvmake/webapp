@@ -32,8 +32,28 @@ mensaje("Producto insertado <a href='".urlsite."?pagina=productos'> CONTINUAR</a
 // If directory is not created, the create a new directory
 
 //QRcode::png("Krisnha ya la chupo el diablo","../Imagen/QRL/239.png",'L',10,5);
-$suma='2';
+//$suma='2';
 
-$sumas=$suma+1;
-echo $sumas;  
+//$sumas=$suma+1;
+//echo $sumas;  
+
+   $variable1='';
+   $variable2=' ,2';
+   $variable3='';
+   $variable4=' ,4';
+
+   $var='';
+  if ($variable1!='') {
+      $var.=$variable1;
+  }
+  if ($variable2!='') {
+       $var.=$variable2;
+  }
+  if ($variable3!='') {
+       $var.=$variable3;
+  }
+  if ($variable4!='') {
+       $var.=$variable4;
+    } 
+echo $var;
 ?>

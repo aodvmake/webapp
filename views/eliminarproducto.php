@@ -24,7 +24,7 @@ include("../controllers/consultamproducto.php");
 </head>
 <body>
 <!--Navbar -->
-<!--Menu de cliente -->
+<!--Menu de admin -->
 <?php
 include ("menuadmk.php");
 ?>
@@ -50,7 +50,7 @@ include ("menuadmk.php");
         foreach ($horario as $a):?>
          <tr>
               <td><?php echo $a['nombre_p']?></td>
-              <td><?php echo $a['nombre_p']?></td>
+              <td><?php echo $a['modelo']?></td>
               <td><?php echo $a['cantidad']?></td>
               <!-- Button to Open the Modal -->
               <td><?php echo '<img src="'.$a['documentoproducto'].'" class="img-thumbnail" style="width: 200px">'; ?></td>
@@ -79,8 +79,8 @@ include ("menuadmk.php");
       </table>
     </div>
 </div>
-
-     </div>  
+</div>
+  
 
   <script type="text/javascript" src="../lib/js/jquery.min.js"></script>
   <!-- Bootstrap tooltips -->
@@ -90,18 +90,3 @@ include ("menuadmk.php");
   <!-- MDB core JavaScript -->
   <script type="text/javascript" src="../lib/js/mdb.min.js"></script>
   <script type="text/javascript" src="../js/eliminarproducto.js"></script>
-  <script type="text/javascript">
-    function soloNumeros(e)
-     {
-     var keynum = window.event ? window.event.keyCode : e.which;
-      if ((keynum == 8) || (keynum == 46))
-      return true;
-      return /\d/.test(String.fromCharCode(keynum));
-    }
-  </script>
-</body>
-</html>
-
-<script type="text/javascript">
-
-</script>

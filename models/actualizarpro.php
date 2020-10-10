@@ -39,7 +39,7 @@ class modeloguardar{
          //  $row=mysqli_fetch_array($conp);
         
         echo'<script type="text/javascript">
-        alert("Daatos Guardados");
+        alert("Datos Guardados");
         window.location.href="../views/actualizarpro.php";
         </script>';
        }

@@ -115,26 +115,4 @@ include ("menuadmk.php");
   <!-- MDB core JavaScript -->
   <script type="text/javascript" src="../lib/js/mdb.min.js"></script>
 
-  <script type="text/javascript">
-function square(id) {
-  $('#idHide').val(id);
-  $('#myModal').modal('show')
-        var parametros = {
-        'id':id,
-        'request':'data',
-        };    
-      $.ajax({
-        data: parametros,
-        url:'../controllers/actualizarp.php',
-        type:'POST',
-        beforeSend: function () {
-            },
-        success:  function (response) {
-         // alert(response);
-          document.getElementById('resultado').innerHTML = response;
-    
-        }
-   });
- }
- 
-</script>
+  <script type="text/javascript" src="../js/actual.js"></script>

@@ -89,10 +89,18 @@ include ("menuadmk.php");
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
         <!-- Modal Header -->
-        <form method="post" action="#" enctype="multipart/form-data">
+        <form method="POST" action="../controllers/actualizarinfo.php" enctype="multipart/form-data">
          <div text-center id="resultado"></div>
+        
+           <div class="row">
+              <div class="col">
+                <button class="btn aqua-gradient" type="submit" name="save" id="save"  value="">Cambiar</button>
+              </div>
+           </div>
+          </div>
+        
         </form>
-           
+
       </div>
     </div> 
 </div>
@@ -128,39 +136,5 @@ function square(id) {
         }
    });
  }
- function saves(id){
-   $('#save').val(id);
-   
-  var name_p=$("#name_p").val()
-  var modelo=$("#modelo").val()
-  var cantidad=$("#cantidad").val()
- // var imagen=$("#imagen").val()
-  var textarea = $("#form10").val()
-  
-
-  var files = $('#imagen')[0].files[0];
-  
-  
-   var parametros = {
-        'id':id,
-        'name_p':name_p,
-        'modelo':modelo,
-        'cantidad':cantidad,
-        'file':files,
-        'textarea':textarea,
-        'request':'data',
-        };    
-      $.ajax({
-        data: parametros,
-        url:'../controllers/actualizarinfo.php',
-        type:'POST',
-        beforeSend: function () {
-            },
-        success:  function (response) {
-          alert(response);
-          //document.getElementById('resultado').innerHTML = response;
-          location.reload();
-        }
-   });
- }
+ 
 </script>

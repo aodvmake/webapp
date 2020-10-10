@@ -64,13 +64,6 @@ class modeloguardar{
                <textarea id="form10" class="md-textarea form-control" rows="3" name="texto">'. $row['detalles'].'</textarea>
                <label for="form10">Detalles del Producto</label>
              </div>
-
-             <div class="row">
-              <div class="col">
-                <button class="btn aqua-gradient" type="submit" name="save" id="save"  value="">Cambiar</button>
-              </div>
-           </div>
-          </div>
             '; 
        //()
 //onclick="saves('.$id.')"

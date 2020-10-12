@@ -44,7 +44,10 @@ class modeloguardar{
         </script>';
        }
       else{
-        echo "Falta llenar un dato";
+        echo'<script type="text/javascript">
+        alert("Faltan Datos");
+        window.location.href="../views/actualizarpro.php";
+        </script>';
       }
     }
   }

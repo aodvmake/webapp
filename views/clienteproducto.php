@@ -56,7 +56,7 @@ include ("menucliente.php");
       <div class="modal-content">
         <!-- Modal Header -->
          <h2>Agregar producto</h2>
-        <form method="POST" action="../controllers/agregarproductocliente" enctype="multipart/form-data">
+        <form method="POST" action="../controllers/agregarproductocliente.php" enctype="multipart/form-data">
          <div text-center id="resultado">
          	
          </div>
@@ -64,6 +64,19 @@ include ("menucliente.php");
            <div class="row">
               <div class="col">
               	<div id="agregarp"></div>
+              	
+              	 <label for="exampleForm2">Cantidad</label>
+                 <input type="text" id="cntidad" name="cntidad" class="form-control" maxlength="3" onkeypress="return soloNumeros(event);">
+                 <br> 
+                 <select class="browser-default custom-select" id="caja" name="caja">
+                 <option selected>Selecciona cuantos meses quieres rentar este equipo</option>
+                 <option value="1 meses">1 meses</option>
+                 <option value="4 meses">4 meses</option>
+                 <option value="6 meses">6 meses</option>
+                 <option value="12 meses">12 meses</option>
+                 <option value="21 meses">21 meses</option>
+               </select>
+               <br><br><br>
                 <button class="btn aqua-gradient" type="submit" name="save" id="save"  value="">Agregar</button>
               </div>
            </div>

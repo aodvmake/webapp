@@ -99,30 +99,7 @@ include ("menucliente.php");
   <script type="text/javascript" src="../lib/js/mdb.min.js"></script>
   <script type="text/javascript" src="../js/buscarclien.js"></script>
   <script type="text/javascript" src="../js/numeros.js"></script>
-  <script type="text/javascript">
-  	function square(id) {
-  	 //$('#idHide').val(id);	
-  	  $('#myModal').modal('show');
-  	  $('#editar').val(id);
-  	  $("#save").val(id);
-  	   
-  	   var parametros = {
-        'id':id,
-        'request':'data',
-        };    
-      $.ajax({
-        data: parametros,
-        url:'../controllers/consultadetallescliente.php',
-        type:'POST',
-        beforeSend: function () {
-            },
-        success:  function (response) {
-         // alert(response);
-          document.getElementById('agregarp').innerHTML = response;
-        }
-      });
-  	}
-  </script>
+  <script type="text/javascript" src="../js/agregarprodu.js"></script>
 
 
 

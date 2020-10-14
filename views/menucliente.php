@@ -18,7 +18,7 @@
         <a class="nav-link" href="#">Novedades</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Mis productos</a>
+        <a class="nav-link" href="misproductos.php">Mis productos</a>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-333" data-toggle="dropdown"

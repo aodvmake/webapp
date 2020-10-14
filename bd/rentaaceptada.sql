@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 14-10-2020 a las 03:56:43
+-- Tiempo de generación: 14-10-2020 a las 03:56:50
 -- Versión del servidor: 10.1.38-MariaDB
 -- Versión de PHP: 7.3.4
 
@@ -25,46 +25,42 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `renta`
+-- Estructura de tabla para la tabla `rentaaceptada`
 --
 
-CREATE TABLE `renta` (
+CREATE TABLE `rentaaceptada` (
+  `IDrenta_a` int(11) NOT NULL,
   `IDrenta` int(11) NOT NULL,
-  `IDproducto` int(11) NOT NULL,
-  `IDusuario` int(11) NOT NULL,
-  `cantidad` int(4) NOT NULL,
-  `meses` varchar(30) NOT NULL,
-  `estatus` tinyint(1) NOT NULL,
-  `estatu` tinyint(1) NOT NULL
+  `fecha_i` date NOT NULL,
+  `fecha_f` date NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Volcado de datos para la tabla `renta`
+-- Volcado de datos para la tabla `rentaaceptada`
 --
 
-INSERT INTO `renta` (`IDrenta`, `IDproducto`, `IDusuario`, `cantidad`, `meses`, `estatus`, `estatu`) VALUES
-(3, 17, 1, 5, '12 meses', 1, 0),
-(4, 17, 1, 10, '21 meses', 0, 0);
+INSERT INTO `rentaaceptada` (`IDrenta_a`, `IDrenta`, `fecha_i`, `fecha_f`) VALUES
+(4, 3, '2020-10-14', '2021-10-14');
 
 --
 -- Índices para tablas volcadas
 --
 
 --
--- Indices de la tabla `renta`
+-- Indices de la tabla `rentaaceptada`
 --
-ALTER TABLE `renta`
-  ADD PRIMARY KEY (`IDrenta`);
+ALTER TABLE `rentaaceptada`
+  ADD PRIMARY KEY (`IDrenta_a`);
 
 --
 -- AUTO_INCREMENT de las tablas volcadas
 --
 
 --
--- AUTO_INCREMENT de la tabla `renta`
+-- AUTO_INCREMENT de la tabla `rentaaceptada`
 --
-ALTER TABLE `renta`
-  MODIFY `IDrenta` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+ALTER TABLE `rentaaceptada`
+  MODIFY `IDrenta_a` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

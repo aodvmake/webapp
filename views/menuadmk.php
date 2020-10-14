@@ -12,7 +12,7 @@
         </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Productos</a>
+        <a class="nav-link" href="solicitudrenta.php">Solicitudes de rentas</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#">Reportes</a>

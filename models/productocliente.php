@@ -12,7 +12,7 @@ class modeloguardar{
              $idus=mysqli_query($rrcnx,"SELECT* FROM usuario WHERE email='$correo' ");
              $row=mysqli_fetch_array($idus);
 
-              mysqli_query($rrcnx,"INSERT INTO renta VALUES ('','$id','".$row['IDusuario']."','$cantidad','$meses','0') ");
+              mysqli_query($rrcnx,"INSERT INTO renta VALUES ('','$id','".$row['IDusuario']."','$cantidad','$meses','0','0') ");
 
               echo'<script type="text/javascript">
               alert("Datos Guardados");

@@ -23,7 +23,7 @@ if (isset($Imagen) && $Imagen != "" AND  $name_p!= "" AND $area!= "" AND $cantid
          $Imagen2="../Imagen/QRL/".$rows.".png";
          QRcode::png("QR ".$name_p." - ".$modelo."  ",$Imagen2,'L',10,5);
             
-         mysqli_query($cnx,"INSERT INTO `productos`VALUES ('','$name_p','$modelo','".$Imagen2."','$cantidad','../Imagen/Productos/".$rows.$Imagen."','$area') ");
+         mysqli_query($cnx,"INSERT INTO `productos`(`nombre_p`, `modelo`, `direccion_qrl`, `cantidad`, `documentoproducto`, `detalles`)  VALUES ('$name_p','$modelo','".$Imagen2."','$cantidad','../Imagen/Productos/".$rows.$Imagen."','$area') ");
          echo "<script> alert('Se guardaron los datos con exito'); </script>";
         }
         else {

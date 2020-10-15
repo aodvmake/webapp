@@ -1,5 +1,5 @@
 <nav class="mb-1 navbar navbar-expand-lg navbar-dark default-color">
-  <a class="navbar-brand" href="#">Navbar</a>
+  <a class="navbar-brand" href="#">SERVILEASING</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-333"
     aria-controls="navbarSupportedContent-333" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -15,9 +15,6 @@
         <a class="nav-link" href="clienteproducto.php">Productos</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Novedades</a>
-      </li>
-      <li class="nav-item">
         <a class="nav-link" href="misproductos.php">Mis productos</a>
       </li>
       <li class="nav-item dropdown">
@@ -25,22 +22,12 @@
           aria-haspopup="true" aria-expanded="false">Asistencia Tecnica
         </a>
         <div class="dropdown-menu dropdown-default" aria-labelledby="navbarDropdownMenuLink-333">
-          <a class="dropdown-item" href="#">Reportar Producto</a>
-          <a class="dropdown-item" href="#">Estado del Reporte</a>
+          <a class="dropdown-item" href="reportequipo.php">Reportar Producto</a>
+          <a class="dropdown-item" href="estadoreporte.php">Estado del Reporte</a>
         </div>
       </li>
     </ul>
     <ul class="navbar-nav ml-auto nav-flex-icons">
-      <li class="nav-item">
-        <a class="nav-link waves-effect waves-light">
-          <i class="fab fa-twitter"></i>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link waves-effect waves-light">
-          <i class="fab fa-google-plus-g"></i>
-        </a>
-      </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-333" data-toggle="dropdown"
           aria-haspopup="true" aria-expanded="false">
@@ -48,7 +35,6 @@
         </a>
         <div class="dropdown-menu dropdown-menu-right dropdown-default"
           aria-labelledby="navbarDropdownMenuLink-333">
-          <a class="dropdown-item" href="#">Action</a>
           <a class="dropdown-item" href="#">Actualizar</a>
           <a class="dropdown-item" href="../cerrarsession.php">Cerrar session</a>
         </div>

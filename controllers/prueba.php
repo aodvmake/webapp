@@ -56,4 +56,6 @@ mensaje("Producto insertado <a href='".urlsite."?pagina=productos'> CONTINUAR</a
        $var.=$variable4;
     } 
 echo $var;
+
+phpinfo();
 ?>

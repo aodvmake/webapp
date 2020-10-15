@@ -1,13 +1,14 @@
 <?php 
-include("../controllers/sesionadm.php");
-include("../controllers/solicitudpro.php");
+include("../controllers/sessioncliente.php");
+include("../controllers/estadoreporte.php");
+
 ?>
 <html>
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>Agregar Producto</title>
+  <title>Actualizar Producto</title>
     <!-- MDB icon -->
   <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon">
   <!-- Font Awesome -->
@@ -24,14 +25,10 @@ include("../controllers/solicitudpro.php");
 </head>
 <body>
 <!--Navbar -->
-<!--Menu de cliente -->
+<!--Menu de admin -->
 <?php
-include ("menuadmk.php");
+include ("menucliente.php");
 ?>
-<div class="alert alert-warning" role="alert">
-  Solicitud de renta de equipo en <a href="#" class="alert-link">proceso</a> de aprovación
-</div>
-<form method="POST" action="../controllers/aceptacionSolicitud.php">
 <table class="table">
   <thead class="black white-text">
     <tr>
@@ -39,9 +36,6 @@ include ("menuadmk.php");
       <th scope="col">Modelo</th>
       <th scope="col">Cantidad a rentar</th>
       <th scope="col">Meses de renta</th>
-      <th scope="col">Empresa</th>
-      <th></th>
-      <th></th>
     </tr>
   </thead>
   <tbody>
@@ -52,16 +46,12 @@ include ("menuadmk.php");
               <td><?php echo $a['modelo']?></td>
               <td><?php echo $a['cantidad']?></td>
               <td><?php echo $a['meses']?></td>
-              <td><?php echo $a['name_e']?></td>
-              <td><button class="btn btn-primary btn-md my-0 p" type="submit" onclick="square('<?php echo $a['IDrenta']?>')" id="aceptar" name="aceptar" value="<?php echo $a['IDrenta']?>">Aceptar Solicitud</button></td>
-              <td><button class="btn btn-danger btn-md my-0 p" type="submit" id="eliminar" name="eliminar" value="<?php echo $a['IDrenta']?>">Eliminar Solicitud</button></td>
       <?php
         endforeach;
       ?>
     </tr>
   </tbody>
 </table>
-</form>
 
 
   <script type="text/javascript" src="../lib/js/jquery.min.js"></script>
@@ -71,5 +61,3 @@ include ("menuadmk.php");
   <script type="text/javascript" src="../lib/js/bootstrap.min.js"></script>
   <!-- MDB core JavaScript -->
   <script type="text/javascript" src="../lib/js/mdb.min.js"></script>
-</body>
-</html>

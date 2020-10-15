@@ -23,7 +23,7 @@ class modeloguardar{
           $fecha_actual = date("Y-m-d");
           $fecha_termina=date("Y-m-d",strtotime($fecha_actual."+ ".$mes." month"));
           
-          mysqli_query($rrcnx,"INSERT INTO rentaaceptada VALUES ('','$id','$fecha_actual','$fecha_termina') ");
+          mysqli_query($rrcnx,"INSERT INTO rentaaceptada (`IDrenta`, `fecha_i`, `fecha_f`) VALUES ('$id','$fecha_actual','$fecha_termina') ");
          
               echo'<script type="text/javascript">
               alert("Datos Guardados");

@@ -1,14 +1,15 @@
-<?php 
-include("../controllers/sessioncliente.php");
-include("../controllers/estadoreporte.php");
 
+<?php
+//correcionreporte.php
+include("../controllers/sesionadm.php");
+include("../controllers/correcionreporte.php");
 ?>
 <html>
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>Actualizar Producto</title>
+  <title>Seguimiento Reporte</title>
     <!-- MDB icon -->
   <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon">
   <!-- Font Awesome -->
@@ -27,8 +28,20 @@ include("../controllers/estadoreporte.php");
 <!--Navbar -->
 <!--Menu de admin -->
 <?php
-include ("menucliente.php");
+include ("menuadmk.php");
 ?>
+
+
+<div class="content">
+  <div class="card-body px-lg-1 pt-0">
+  <h2>Seguimiento de Reporte</h2>
+    <div class="table-responsive-sm">
+      <div class="table-responsive text-nowrap">
+    </div>
+</div>
+</div>
+</div>
+<form method="POST" action="../controllers/correcion.php">
 <table class="table">
   <thead class="black white-text">
     <tr>
@@ -36,6 +49,7 @@ include ("menucliente.php");
       <th scope="col">Modelo</th>
       <th scope="col">Seriales</th>
       <th scope="col">Explicación</th>
+      <th scope="col">Empresa</th>
       <th></th>
     </tr>
   </thead>
@@ -47,13 +61,8 @@ include ("menucliente.php");
               <td><?php echo $a['modelo']?></td>
               <td><?php echo $a['seriales']?></td>
               <td><?php echo $a['texto']?></td>
-              <td><?php if($a['estatus']=="1"){
-                echo "<input type='text' style='background:#D12126;color:white;border:5px;border-radius:8px;' value=' En Proceso'> ";
-              }
-                else{
-                echo "<input type='text' style='background:#23D121 ;color:white;border:5px;border-radius:8px;' value=' Corregido'> ";
-                }
-              ?></td>
+              <td><?php echo $a['name_e']?></td>
+              <td><button class="btn btn-primary btn-md my-0 p" type="submit" id="aceptar" name="aceptar" value="<?php echo $a['IDreporte']?>">Corregido</button></td></td>
       <?php
         endforeach;
       ?>
@@ -61,6 +70,7 @@ include ("menucliente.php");
   </tbody>
 </table>
 
+</form>
 
   <script type="text/javascript" src="../lib/js/jquery.min.js"></script>
   <!-- Bootstrap tooltips -->
@@ -69,3 +79,5 @@ include ("menucliente.php");
   <script type="text/javascript" src="../lib/js/bootstrap.min.js"></script>
   <!-- MDB core JavaScript -->
   <script type="text/javascript" src="../lib/js/mdb.min.js"></script>
+
+  <script type="text/javascript" src="../js/actual.js"></script>

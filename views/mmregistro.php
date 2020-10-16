@@ -23,8 +23,7 @@
     <div class="content">
       <div class="card-body px-lg-5 pt-0">
         <h2>REGISTRO</h2>
-        <form class="text-center" method="POST" action="">
-
+       
             <div class="row">
               <div class="col">
                 <div class="md-form">
@@ -94,7 +93,7 @@
             <div class="row">
               <div class="col">
                 <div class="md-form">
-                 <input type="text" class="form-control" name="num" id="num" maxlength="3">
+                 <input type="text" class="form-control" name="num" id="num" maxlength="3" onkeypress="return soloNumeros(event);">
                  <label for="num">Numero</label>
                 </div>      
               </div>
@@ -123,7 +122,6 @@
                 <button class="btn aqua-gradient" type="submit" name="enviar" id="enviar">Registrar</button>
               </div>
             </div>
-          </form>
       </div>    
     </div>
   </div>
@@ -137,15 +135,6 @@
   <!-- MDB core JavaScript -->
   <script type="text/javascript" src="lib/js/mdb.min.js"></script>
   <script type="text/javascript" src="js/registro.js"></script>
-  <script type="text/javascript">
-    function soloNumeros(e)
-{
-var keynum = window.event ? window.event.keyCode : e.which;
-if ((keynum == 8) || (keynum == 46))
-return true;
-return /\d/.test(String.fromCharCode(keynum));
-}
-  </script>
-  <script type="text/javascript" src>"numeros.js"</script>
+  <script type="text/javascript" src="js/numeros.js"></script>
 </body>
 </html>

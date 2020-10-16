@@ -8,6 +8,7 @@ $(document).ready(function(){
 				'pass':pass,
 				'request':'data',
 			};
+
 			$.ajax({
 				data: parametros,
 				url:'controllers/loges.php',

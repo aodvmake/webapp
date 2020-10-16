@@ -46,7 +46,8 @@ include ("menucliente.php");
               <td><?php echo $a['nombre_p']?></td>
               <td><?php echo $a['modelo']?></td>
               <td><?php echo $a['seriales']?></td>
-              <td><?php echo $a['texto']?></td>
+              <td><div class="form-group shadow-textarea">
+              <textarea class="form-control rounded-0" id="exampleFormControlTextarea1" readonly="" rows="10"><?php $b=htmlspecialchars($a['texto']); echo $b;?></textarea></div></td>
               <td><?php if($a['estatus']=="1"){
                 echo "<input type='text' style='background:#D12126;color:white;border:5px;border-radius:8px;' value=' En Proceso'> ";
               }

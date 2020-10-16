@@ -60,7 +60,7 @@ include ("menuadmk.php");
               <td><?php echo $a['nombre_p']?></td>
               <td><?php echo $a['modelo']?></td>
               <td><?php echo $a['seriales']?></td>
-              <td><?php echo $a['texto']?></td>
+              <td> <textarea class="form-control rounded-0" id="exampleFormControlTextarea1" readonly="" rows="10"><?php $b=htmlspecialchars($a['texto']); echo $b;?></textarea></div></td>
               <td><?php echo $a['name_e']?></td>
               <td><button class="btn btn-primary btn-md my-0 p" type="submit" id="aceptar" name="aceptar" value="<?php echo $a['IDreporte']?>">Corregido</button></td></td>
       <?php

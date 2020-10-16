@@ -65,7 +65,7 @@ include ("menuadmk.php");
             <p class="lead font-weight-bold">Modelo: <?php echo $a['modelo']?></p>
             <p class="lead font-weight-bold">Cantidad: <?php echo $a['cantidad']?></p>
             <p class="lead font-weight-bold">Descripción</p>
-            <p><?php echo $a['detalles']?></p>
+            <p><textarea class="form-control rounded-0" id="exampleFormControlTextarea1" readonly="" rows="10"><?php $b=htmlspecialchars($a['detalles']); echo $b;?></textarea></p>
 
               <!-- Default input -->
               

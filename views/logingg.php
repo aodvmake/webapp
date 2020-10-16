@@ -18,7 +18,6 @@
 </head>
 
 
-        <form  method="POST">
             <div class="row">
               <div class="col">
                 <div class="md-form">
@@ -43,7 +42,7 @@
                 <button class="btn aqua-gradient" type="submit" name="enviar" id="enviar">Entrar</button>
               </div>
             </div>
-        </form>
+      
  
 
 

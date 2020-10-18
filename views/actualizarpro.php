@@ -1,4 +1,7 @@
 <?php 
+mb_internal_encoding("iso-8859-1");
+mb_http_output( "UTF-8" );
+ob_start("mb_output_handler");
 include("../controllers/sesionadm.php");
 include("../controllers/consultactuali.php");
 ?>
@@ -64,8 +67,8 @@ include ("menuadmk.php");
             <p class="lead font-weight-bold">Marca: <?php echo $a['nombre_p']?></p>
             <p class="lead font-weight-bold">Modelo: <?php echo $a['modelo']?></p>
             <p class="lead font-weight-bold">Cantidad: <?php echo $a['cantidad']?></p>
-            <p class="lead font-weight-bold">Descripción</p>
-            <p><textarea class="form-control rounded-0" id="exampleFormControlTextarea1" readonly="" rows="10"><?php $b=htmlspecialchars($a['detalles']); echo $b;?></textarea></p>
+            <p class="lead font-weight-bold"><?php echo utf8_decode("Descripción"); ?></p>
+            <p><textarea class="form-control rounded-0" id="exampleFormControlTextarea1" readonly="" rows="10"><?php echo $a['detalles'];?></textarea></p>
 
               <!-- Default input -->
               
@@ -104,6 +107,38 @@ include ("menuadmk.php");
       </div>
     </div> 
 </div>
+
+
+<footer class="page-footer font-small special-color-dark pt-4">
+
+  <!-- Footer Elements -->
+  <div class="container">
+
+    <!--Grid row-->
+    <div class="row">
+
+      <!--Grid column-->
+      <div class="col-md-6 mb-4">
+
+      
+
+      </div>
+      <!--Grid column-->
+
+    </div>
+    <!--Grid row-->
+
+  </div>
+  <!-- Footer Elements -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2020 Copyright:
+    <a href="https://mdbootstrap.com/">Equipo Dinamita</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
 
 
 

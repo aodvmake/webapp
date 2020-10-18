@@ -22,6 +22,10 @@
   <div class="container">
     <div class="content">
       <div class="card-body px-lg-5 pt-0">
+         <br>
+         <a href="login.php">Regresar</a>
+        <br>
+        <br>
         <h2>REGISTRO</h2>
        
             <div class="row">
@@ -119,7 +123,7 @@
 
             <div class="row">
               <div class="col">
-                <button class="btn aqua-gradient" type="submit" name="enviar" id="enviar">Registrar</button>
+                <button class="btn btn-info btn-block my-4" type="submit" name="enviar" id="enviar">Registrar</button>
               </div>
             </div>
       </div>    

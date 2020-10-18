@@ -1,5 +1,8 @@
 <?php 
 session_start();
+mb_internal_encoding("iso-8859-1");
+mb_http_output( "UTF-8" );
+ob_start("mb_output_handler");
 include("bd.php");
 class modeloguardar{
        function guardar($id){
@@ -12,7 +15,7 @@ class modeloguardar{
       echo '
   
          <div class="modal-header">
-          <h4 class="modal-title">Editar información</h4>
+          <h4 class="modal-title">'.utf8_decode('Editar información').'</h4>
           <button type="button" class="close" data-dismiss="modal">&times;</button>
         </div>
         <div class="modal-body">

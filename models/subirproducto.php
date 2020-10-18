@@ -1,4 +1,7 @@
 <?php
+mb_internal_encoding("iso-8859-1");
+mb_http_output( "UTF-8" );
+ob_start("mb_output_handler");
 include("bd.php");
 require_once("../lib/phpqrcode/qrlib.php");
 class DBImagen{
@@ -23,7 +26,7 @@ if (isset($Imagen) && $Imagen != "" AND  $name_p!= "" AND $area!= "" AND $cantid
          $Imagen2="../Imagen/QRL/".$rows.".png";
          QRcode::png("QR ".$name_p." - ".$modelo."  ",$Imagen2,'L',10,5);
             
-         mysqli_query($cnx,"INSERT INTO `productos`(`nombre_p`, `modelo`, `direccion_qrl`, `cantidad`, `documentoproducto`, `detalles`)  VALUES ('$name_p','$modelo','".$Imagen2."','$cantidad','../Imagen/Productos/".$rows.$Imagen."','$area') ");
+         mysqli_query($cnx,"INSERT INTO `productos`(`nombre_p`, `modelo`, `direccion_qrl`, `cantidad`, `documentoproducto`, `detalles`)  VALUES ('$name_p','$modelo','".$Imagen2."','$cantidad','../Imagen/Productos/".$rows.$Imagen."','".utf8_decode($area)."') ");
          echo "<script> alert('Se guardaron los datos con exito'); </script>";
         }
         else {

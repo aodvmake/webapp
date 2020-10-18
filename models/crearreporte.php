@@ -22,7 +22,7 @@ if (isset($Imagen) && $Imagen != ""  AND $caja!= "" AND $seriales!= ""  AND $exp
         //Si la imagen es correcta en tamaño y tipo
         //Se intenta subir al servidor
         if (move_uploaded_file($temp, '../Imagen/Reporte/'.$rows.$Imagen)){
-             mysqli_query($cnx,"INSERT INTO reportes (`IDrenta`, `seriales`, `img`, `texto`, `estatus`) VALUES ('$caja','$seriales','../Imagen/Reporte/".$rows.$Imagen."','$exp','1') ");
+             mysqli_query($cnx,"INSERT INTO reportes (`IDrenta`, `seriales`, `img`, `texto`, `estatus`) VALUES ('$caja','$seriales','../Imagen/Reporte/".$rows.$Imagen."','".utf8_decode($exp)."','1') ");
         echo'<script type="text/javascript">
         alert("Se guardaron los datos con exito");
         window.location.href="../views/reportequipo.php";

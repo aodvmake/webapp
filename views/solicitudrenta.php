@@ -7,7 +7,7 @@ include("../controllers/solicitudpro.php");
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>Agregar Producto</title>
+  <title>Solicitud de Renta</title>
     <!-- MDB icon -->
   <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon">
   <!-- Font Awesome -->
@@ -29,7 +29,7 @@ include("../controllers/solicitudpro.php");
 include ("menuadmk.php");
 ?>
 <div class="alert alert-warning" role="alert">
-  Solicitud de renta de equipo en <a href="#" class="alert-link">proceso</a> de aprovación
+  Solicitud de renta de equipo en <a href="#" class="alert-link">proceso</a> de Aprobación
 </div>
 <form method="POST" action="../controllers/aceptacionSolicitud.php">
 <table class="table">
@@ -62,7 +62,7 @@ include ("menuadmk.php");
   </tbody>
 </table>
 </form>
-
+<?php include("footer.php");?>
 
   <script type="text/javascript" src="../lib/js/jquery.min.js"></script>
   <!-- Bootstrap tooltips -->

@@ -1,5 +1,5 @@
 <nav class="mb-1 navbar navbar-expand-lg navbar-dark default-color">
-  <a class="navbar-brand" href="#">SERVILEASING</a>
+  <a class="navbar-brand" href="cliente.php">SERVILEASING</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-333"
     aria-controls="navbarSupportedContent-333" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -35,7 +35,7 @@
         </a>
         <div class="dropdown-menu dropdown-menu-right dropdown-default"
           aria-labelledby="navbarDropdownMenuLink-333">
-          <a class="dropdown-item" href="#">Actualizar</a>
+          <a class="dropdown-item" href="datosgeneralescliente.php">Actualizar</a>
           <a class="dropdown-item" href="../cerrarsession.php">Cerrar session</a>
         </div>
       </li>

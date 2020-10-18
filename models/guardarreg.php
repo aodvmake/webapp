@@ -19,9 +19,9 @@ class modeloguardar{
         case $rows=="":
 
             //Guardar datos
-            mysqli_query($rcnx,"INSERT INTO usuario VALUES ('','$correo',MD5('$pass'),'','1')");     
-            mysqli_query($rcnx,"INSERT INTO datosgenerales VALUES ('','$domicilio','$colonia','$num','$muncipio','$estado','$name_e','$name_p','$telefono')");
-            mysqli_query($rcnx,"INSERT INTO puesto VALUES ('','3')");
+            mysqli_query($rcnx,"INSERT INTO usuario (`email`, `pass`, `foto`, `estatus`) VALUES ('$correo',MD5('$pass'),'vacio','1')");     
+            mysqli_query($rcnx,"INSERT INTO datosgenerales (`domicilio`, `colonia`, `numero`, `municipio`, `estado`, `name_e`, `name_p`, `telefono`) VALUES ('$domicilio','$colonia','$num','$muncipio','$estado','$name_e','$name_p','$telefono')");
+            mysqli_query($rcnx,"INSERT INTO puesto (`IDpuesto`) VALUES ('3')");
             
             echo "Datos guardados con exito";
             

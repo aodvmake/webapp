@@ -3,6 +3,10 @@
 //correcionreporte.php
 include("../controllers/sesionadm.php");
 include("../controllers/correcionreporte.php");
+error_reporting();
+mb_internal_encoding("iso-8859-1");
+mb_http_output( "UTF-8" );
+ob_start("mb_output_handler");
 ?>
 <html>
 <head>
@@ -48,7 +52,7 @@ include ("menuadmk.php");
       <th scope="col">Marca</th>
       <th scope="col">Modelo</th>
       <th scope="col">Seriales</th>
-      <th scope="col">Explicación</th>
+      <th scope="col"><?php echo utf8_decode("Explicación")?></th>
       <th scope="col">Empresa</th>
       <th></th>
     </tr>
@@ -60,7 +64,7 @@ include ("menuadmk.php");
               <td><?php echo $a['nombre_p']?></td>
               <td><?php echo $a['modelo']?></td>
               <td><?php echo $a['seriales']?></td>
-              <td> <textarea class="form-control rounded-0" id="exampleFormControlTextarea1" readonly="" rows="10"><?php $b=htmlspecialchars($a['texto']); echo $b;?></textarea></div></td>
+              <td> <textarea class="form-control rounded-0" id="exampleFormControlTextarea1" readonly="" rows="10"><?php echo $a['texto']?></textarea></div></td>
               <td><?php echo $a['name_e']?></td>
               <td><button class="btn btn-primary btn-md my-0 p" type="submit" id="aceptar" name="aceptar" value="<?php echo $a['IDreporte']?>">Corregido</button></td></td>
       <?php
@@ -69,8 +73,8 @@ include ("menuadmk.php");
     </tr>
   </tbody>
 </table>
-
 </form>
+
 
   <script type="text/javascript" src="../lib/js/jquery.min.js"></script>
   <!-- Bootstrap tooltips -->

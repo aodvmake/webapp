@@ -16,7 +16,7 @@ $(document).ready(function(){
 				beforeSend: function () {
 		        },
 				success:  function (response) {
-					alert(response);
+					
 					$("#email").val("")
 					$("#pass").val("")
 						switch(response){

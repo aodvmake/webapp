@@ -32,7 +32,7 @@ class modeloguardar{
          $actualiza.=",documentoproducto='../Imagen/Productos/".$id.$Imagen."' ";
          }
          if ($textarea!='') {
-         $actualiza.=",detalles='".$textarea."' " ;
+         $actualiza.=",detalles='".utf8_decode($textarea)."' " ;
          }  
 
          mysqli_query($rrcnx,"UPDATE productos SET $actualiza WHERE IDproducto='".$id."' ");

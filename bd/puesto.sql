@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 13-10-2020 a las 01:44:40
+-- Tiempo de generación: 19-10-2020 a las 00:29:34
 -- Versión del servidor: 10.1.38-MariaDB
 -- Versión de PHP: 7.3.4
 
@@ -39,8 +39,9 @@ CREATE TABLE `puesto` (
 
 INSERT INTO `puesto` (`IDusuario`, `IDpuesto`) VALUES
 (1, 3),
-(2, 3),
-(3, 1);
+(3, 1),
+(4, 3),
+(5, 1);
 
 --
 -- Índices para tablas volcadas
@@ -60,7 +61,7 @@ ALTER TABLE `puesto`
 -- AUTO_INCREMENT de la tabla `puesto`
 --
 ALTER TABLE `puesto`
-  MODIFY `IDusuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `IDusuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

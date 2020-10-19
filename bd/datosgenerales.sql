@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 13-10-2020 a las 01:44:59
+-- Tiempo de generación: 19-10-2020 a las 00:29:15
 -- Versión del servidor: 10.1.38-MariaDB
 -- Versión de PHP: 7.3.4
 
@@ -45,9 +45,10 @@ CREATE TABLE `datosgenerales` (
 --
 
 INSERT INTO `datosgenerales` (`IDusuario`, `domicilio`, `colonia`, `numero`, `municipio`, `estado`, `name_e`, `name_p`, `telefono`) VALUES
-(1, 'dom', 'col', 92, 'mun', 'est', 'Empresa', 'Jorge', 123),
-(2, 'dom', 'col', 92, 'mun', 'est', 'Empresa', 'Jorge', 123),
-(3, 'Dom', 'Col', 1234, 'Muni', 'Estado', 'Empresa', 'Nombre', 862163);
+(1, 'Jorge', 'col', 92, 'mun', 'est', 'EMSAIT', 'Jorge', 123),
+(3, 'Nombre', 'Col', 1234, 'Muni', 'Estado', 'Empresa de la empresa', 'Nombre de la persona', 862163),
+(4, 'Calle empresas', 'Zona empresarial', 213, 'Saltillo', 'Coahuila', 'Prueba', 'Juan Perez Maldoman', 2147483647),
+(5, 'Prueba', 'Prueba', 213, 'Saltillo', 'Coahuila', 'CESEHSA Saltillo', 'Emilio', 2147483647);
 
 --
 -- Índices para tablas volcadas
@@ -67,7 +68,7 @@ ALTER TABLE `datosgenerales`
 -- AUTO_INCREMENT de la tabla `datosgenerales`
 --
 ALTER TABLE `datosgenerales`
-  MODIFY `IDusuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `IDusuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

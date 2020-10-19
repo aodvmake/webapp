@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 14-10-2020 a las 03:56:50
+-- Tiempo de generación: 19-10-2020 a las 00:30:28
 -- Versión del servidor: 10.1.38-MariaDB
 -- Versión de PHP: 7.3.4
 
@@ -40,7 +40,11 @@ CREATE TABLE `rentaaceptada` (
 --
 
 INSERT INTO `rentaaceptada` (`IDrenta_a`, `IDrenta`, `fecha_i`, `fecha_f`) VALUES
-(4, 3, '2020-10-14', '2021-10-14');
+(4, 11, '2020-04-17', '2020-10-17'),
+(5, 13, '2020-09-17', '2020-10-17'),
+(6, 12, '2020-10-19', '2021-10-19'),
+(7, 15, '2020-10-19', '2021-10-19'),
+(8, 17, '2020-10-19', '2022-07-19');
 
 --
 -- Índices para tablas volcadas
@@ -60,7 +64,7 @@ ALTER TABLE `rentaaceptada`
 -- AUTO_INCREMENT de la tabla `rentaaceptada`
 --
 ALTER TABLE `rentaaceptada`
-  MODIFY `IDrenta_a` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `IDrenta_a` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

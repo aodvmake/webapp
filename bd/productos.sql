@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 13-10-2020 a las 01:44:52
+-- Tiempo de generación: 19-10-2020 a las 00:29:24
 -- Versión del servidor: 10.1.38-MariaDB
 -- Versión de PHP: 7.3.4
 
@@ -43,8 +43,11 @@ CREATE TABLE `productos` (
 --
 
 INSERT INTO `productos` (`IDproducto`, `nombre_p`, `modelo`, `direccion_qrl`, `cantidad`, `documentoproducto`, `detalles`) VALUES
-(16, 'Hp', 'DJHAOQ', '../Imagen/QRL/1.png', 56, '../Imagen/Productos/1Captura.PNG', 'Este es un producto'),
-(17, 'Zebra', 'x430', '../Imagen/QRL/17.png', 26, '../Imagen/Productos/17Captura.PNG', 'Este es otro producto a sido actualizado:\r\nmas producto guardado');
+(29, 'Samsung', 'MFP MultiXpress SL-M5360RX', '../Imagen/QRL/1.png', 300, '../Imagen/Productos/1SamsungM5360.JPG', 'Trabaje de forma más inteligente con un Centro Smart UX intuitivo\r\nEl Centro Smart UX agiliza sus flujos de trabajo\r\nPanel táctil fácil de usar con una capacidad de respuesta excepcional\r\nImprima más en menos tiempo con precisión y velocidad\r\nImprima documentos de alto gramaje rápidamente con una CPU de cuatro\r\nnúcleos (1.5 GHz)\r\nMejore su texto y sus imágenes con la tecnología ReCP\r\nMejore la productividad con opciones variables'),
+(30, 'HP', 'LaserJet Enterprise 700 M775', '../Imagen/QRL/30.png', 280, '../Imagen/Productos/30hp700.jpg', 'Incremente las capacidades de impresión en color con tamaños de soporte de hasta A3\r\npara obtener impresionantes materiales de marketing y mucho más.\r\nImprima con negrita y color suave y obtenga el resultado en color que usted tenía\r\nprevisto con coincidencia Pantone®.\r\nVaya desde el principio hasta el final, con este equipo multifunción: impresión, copia,\r\nescaneado y fax1 desde la pantalla táctil grande.\r\nImprima desde su smartphone o tablet, desde casi cualquier lugar, con'),
+(31, 'Samsung', ' ProXpress SL-M4020ND', '../Imagen/QRL/31.png', 320, '../Imagen/Productos/31SamsungM4020D.JPG', 'Crea documentos profesionales rápidamente\r\nReduce los costes operativos con sus económicas funciones y soluciones\r\nDiseñada para un uso intuitivo\r\nMejora la productividad gracias a la versatilidad de sus funciones'),
+(32, 'Xerox', 'WorkCentre 3025', '../Imagen/QRL/32.png', 282, '../Imagen/Productos/32Xerox3025.JPG', 'Rendimiento confiable. La Phaser 3020\r\ny la WorkCentre 3025 manejan grandes\r\ncargas de trabajo con facilidad.\r\nMenos tiempo de espera. La velocidad\r\nde impresión de 21 páginas por minuto le\r\npermite pasar más tiempo con sus clientes y\r\nmenos tiempo esperando.\r\nAlto impacto. Precio accesible. Cuando elige\r\nuna impresora o impresora multifunción con\r\nUSB, Ethernet (WorkCentre 3025NI) y Wi-Fi\r\nincorporada, obtiene resultados increíbles y\r\nun gran conjunto de funciones estándar.'),
+(33, 'HP', 'Neverstop Laser 1000a', '../Imagen/QRL/33.png', 367, '../Imagen/Productos/33hp.JPG', 'Hasta 10 veces más la cantidad de páginas que las impresoras láser HP de su categoría5\r\n\r\nSe diseñó para imprimir en gran volumen. Obtenga tóner para imprimir 5,000 páginas de inmediato.1\r\nObtenga velocidades de impresión de hasta 20 ppm A4 / 21 ppm carta.\r\n3\r\nImprima fácilmente y con rapidez directamente desde el panel de control.\r\nCambie el papel con menos frecuencia con una bandeja de papel con capacidad para 150 hojas.');
 
 --
 -- Índices para tablas volcadas
@@ -64,7 +67,7 @@ ALTER TABLE `productos`
 -- AUTO_INCREMENT de la tabla `productos`
 --
 ALTER TABLE `productos`
-  MODIFY `IDproducto` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+  MODIFY `IDproducto` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=34;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
